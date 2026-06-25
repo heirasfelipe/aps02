@@ -1,0 +1,21 @@
+        body {
+            width: 90%;
+            margin: auto;
+            max-width: 1800px;
+        }
+
+        article {
+            width: 90%;
+            float: none;
+            margin: auto;
+        }
+
+        article img {
+            width: 100%;
+        }
+        .soGrande, .soMedio   {
+            display: none;
+        }
+        .soPequeno {
+            display: block;
+        }

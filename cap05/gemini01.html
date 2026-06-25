@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria Responsiva - Ron Mueck</title>
+    <style>
+        /* --- Configurações Globais --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+                }
+
+        /* Clearfix: Essencial para conter os elementos em float */
+        .container::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* --- Estilo dos Cards (Mobile First) --- */
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            width: 100%; /* Ocupa a largura total em telas pequenas */
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        .content h2, .content h3 {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .content p {
+            font-size: 0.9rem;
+            text-align: justify;
+        }
+
+        /* --- MEDIA QUERY (Mínimo de 680px) --- */
+        /* Tela grande: min. 680px */
+        @media (min-width: 680px) {
+            .card {
+                float: left; /* Alinha os cards horizontalmente */
+                
+                /* Cálculo para 3 colunas: 
+                   31.33% de largura + 1% de margem em cada lado (total 2% de margem por card)
+                   31.33% + 2% = 33.33% por bloco. Total = 100% */
+                width: 31.33%; 
+                margin: 1%; 
+                
+                /* Altura mínima para manter os cards simétricos mesmo com textos diferentes */
+                min-height: 520px; 
+                margin-bottom: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <main class="container">
+        <section class="card">
+            <img src="ron-mueck-1.JPG" alt="Escultura de cabeça gigante">
+            <div class="content">
+                <h2>Lorem ipsum dolor sit amet</h2> 
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quo voluptatibus deleniti asperiores atque laudantium dolorem, 
+                    ad qui voluptate repellat velit, fuga quaerat ipsa dicta quam 
+                    cupiditate labore corporis enim tenetur. 
+                </p>
+            </div>
+        </section>
+
+        <section class="card">
+            <img src="ron-mueck-2.JPG" alt="Escultura de mulher com gravetos">
+            <div class="content">
+                <h3>Libero iure reiciendis</h3> 
+                <p>
+                    Libero iure reiciendis, nam ullam deserunt sint fugit maxime, 
+                    quasi officiis itaque, eos modi deleniti!   
+                    Atque et nobis libero, ratione, ut enim amet animi modi ducimus 
+                    adipisci officiis neque quasi!
+                </p>
+            </div>
+        </section>
+
+        <section class="card">
+            <img src="ron-mueck-3.JPG" alt="Escultura de casal sob o guarda-sol">
+            <div class="content">
+                <h2>Quidem quas reiciendis</h2> 
+                <p>
+                    Quidem quas reiciendis, doloremque molestias adipisci, laboriosam 
+                    aliquid, perspiciatis ullam maiores quia numquam velit 
+                    reprehenderit, dolorem vel! 
+                    Qui veniam adipisci earum numquam voluptate, modi velit porro 
+                    officiis laborum iusto itaque.
+                </p>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

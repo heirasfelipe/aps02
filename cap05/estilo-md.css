@@ -1,0 +1,29 @@
+        body {
+            width: 90%;
+            margin: auto;
+            max-width: 1800px;
+        }
+
+        article {
+            width: 45%;
+            float: left;
+            margin: auto 2.5%;
+        }
+
+        article img {
+            width: 100%;
+        }
+
+        article:last-of-type {
+            width: 95%;
+            float: none;
+            margin: auto;
+        }
+
+        .soGrande, .soPequeno {
+            display: none;
+        }
+
+        .soMedio {
+            display: block;
+        }

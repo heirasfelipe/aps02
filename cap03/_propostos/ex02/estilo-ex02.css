@@ -1,0 +1,21 @@
+        body{
+            width: 803px;
+            margin: auto;
+        }
+        h1{
+            color: #764e36;
+            /* border-top-style: solid;
+            border-bottom-style: solid; */
+            /* top, right, bottom, left */
+            border-style: solid none;
+            border-width: 2px;
+        }
+        h2{
+            color: #fcfcfcfc;
+            background-color: #764e36;
+            padding: 2px;
+        }
+        img{
+            border: solid 3px #764e36;
+            padding: 7px;
+        }

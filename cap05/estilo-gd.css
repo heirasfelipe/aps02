@@ -1,0 +1,32 @@
+        body {
+            width: 90%;
+            margin: auto;
+            max-width: 1800px;
+        }
+
+        article {
+            width: 30%;
+            float: left;
+        }
+
+        article img {
+            max-width: 100%;
+        }
+
+        article:last-of-type {
+            width: 30%;
+            float: left;
+        }
+
+        article:last-of-type img {
+            margin-bottom: 20%;
+        }
+
+        .soPequeno,
+        .soMedio {
+            display: none;
+        }
+
+        .soGrande {
+            display: block;
+        }
